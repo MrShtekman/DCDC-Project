@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,14 +21,14 @@ public class AgentController : MonoBehaviour
     
     void Update()
     {
-  
+     
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
         {
         
             SelectPath(out entry, out exit);
             GameObject visitor = Instantiate(customer, entry.position, Quaternion.identity);
-            visitor.GetComponent<CustomerNavMesh>().setDestination(exit.position);
+            visitor.GetComponent<CustomerNavMesh>().setDestination(exit);
             spawnTimer = spawnInterval;
         }
     }
@@ -37,13 +38,15 @@ public class AgentController : MonoBehaviour
         Random random = new Random();
         int entryIndex = random.Next(0, spawnPoints.Count);
         int exitIndex = random.Next(0, spawnPoints.Count);
-        while(exitIndex == entryIndex)
-        {
-            exitIndex = random.Next(0, spawnPoints.Count);
-        }
 
-        entry = spawnPoints[0];
-        exit = spawnPoints[1];
+        if (entryIndex == exitIndex && entryIndex == 4)
+            entryIndex = 0;
+        else if (entryIndex == exitIndex)
+            entryIndex++;
+
+        entry = spawnPoints[entryIndex];
+        exit = spawnPoints[exitIndex];
+        Debug.Log(entryIndex + "  " + exitIndex);
         
     }
 }

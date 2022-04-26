@@ -6,12 +6,13 @@ using UnityEngine.AI;
 public class CustomerNavMesh : MonoBehaviour
 {
     private NavMeshAgent agent;
+    [SerializeField] private Transform desti;
 
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-
+        
     }
 
     private void Update()
@@ -21,9 +22,11 @@ public class CustomerNavMesh : MonoBehaviour
 
     }
 
-    public void setDestination(Vector3 destination)
+    public void setDestination(Transform destination)
     {
-        agent.SetDestination(destination);
+        desti = destination;
+        agent.SetDestination(destination.position);
+        
     }
 
 }

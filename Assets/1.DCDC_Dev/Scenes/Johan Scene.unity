@@ -14920,10 +14920,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806fb36768d499145b8b238aba32300a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoints: []
+  spawnPoints:
+  - {fileID: 1908406863}
+  - {fileID: 618317003}
+  - {fileID: 1640201985}
+  - {fileID: 213033093}
+  - {fileID: 1852267549}
   customer: {fileID: 3223363613242180768, guid: 0a34b53dbf1908d4d8ebac3f159e1cb6,
     type: 3}
-  spawnInterval: 1000
+  spawnInterval: 1
 --- !u!4 &2001414924
 Transform:
   m_ObjectHideFlags: 0
