@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.6.3">
+<ModelTarget name="rescaled" targetId="1971837196054d65bdd49b4d5f03dfa8" version="14.0" toolVersion="10.6.3" bbox="-0.007803 -0.000303 -0.360303 0.613673 0.050349 0.015120" previewImage="1971837196054d65bdd49b4d5f03dfa8_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="rescaleds_assembly" assemblyId="7147b708e51c47ee85399385981de368">
+<Part name="rescaled" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.170056 0.0461439 1.5054" rotation="AD: 0.999997 0.00970601 -0.278597 183.844" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="0.170056 0.0461439 1.46257" rotation="AD: 0.999997 0.00970601 -0.278597 183.844" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0002" translation="-0.167183 0.231509 0.91507" rotation="AD: 0.967954 0.386866 -0.950909 211.189" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0003" translation="-0.167183 0.190165 0.594792" rotation="AD: 0.980769 0.290921 -0.963498 203.799" image="" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
