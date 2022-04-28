@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/1.DCDC_Dev/Scenes/FoodCourtScene_LevelDesign.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/1.DCDC_Dev/Scenes/Sharad Scene_Image_Tracking.unity
     guid: 0cca87240e97fe54ab706434c0667bd7
+  - enabled: 1
+    path: Assets/1.DCDC_Dev/Scenes/Johan Scene.unity
+    guid: 825b3b10e70c0904d866dfa898698d70
   m_configObjects: {}
