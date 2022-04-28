@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Remodeled_Food_Court" motionHint="static" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="Remodeled_Food_Courts_assembly" assemblyId="0dc77b2d1c8348ba8583cde36cb1b471">
+<Part name="Remodeled_Food_Court" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-2.02011e-05 0.0198684 1.69392" rotation="AD: 0.99998 0.0150242 -0.467576 183.334" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

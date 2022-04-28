@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.6.3">
+<ModelTarget name="Remodeled_Food_Court" targetId="baaa2985d7584397baad8ae5dc097d90" version="14.0" toolVersion="10.6.3" bbox="-0.301666 -0.010352 -0.361010 0.301603 0.050175 0.361010" previewImage="baaa2985d7584397baad8ae5dc097d90_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Remodeled_Food_Courts_assembly" assemblyId="0dc77b2d1c8348ba8583cde36cb1b471">
+<Part name="Remodeled_Food_Court" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-2.02011e-05 0.0198684 1.69392" rotation="AD: 0.99998 0.0150242 -0.467576 183.334" image="" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
