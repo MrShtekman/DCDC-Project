@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.6.3">
+<ModelTarget name="track" targetId="a4c81fb052bb45818b9fd852c8608a40" version="14.0" toolVersion="10.6.3" bbox="-710.146545 -150.146561 -0.146556 -409.853455 -69.833900 52.173912" previewImage="a4c81fb052bb45818b9fd852c8608a40_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="tracks_assembly" assemblyId="7293aa41a6744cee8bae02149c245b8e">
+<Part name="track" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="569.404 19.2741 1810.15" rotation="AD: 0.201061 1.52998 -1.29398 170.347" image="" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

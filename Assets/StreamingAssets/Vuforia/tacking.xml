@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="tacking" motionHint="static" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="tackings_assembly" assemblyId="fca95b78ef684729a77eddc3488e96b6">
+<Part name="tacking" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.39667 -0.0391077 17.6209" rotation="AD: 0.999999 0.0109823 -0.131414 189.473" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>
