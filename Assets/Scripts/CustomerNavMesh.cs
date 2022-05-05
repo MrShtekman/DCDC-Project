@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class CustomerNavMesh : MonoBehaviour
 {
-    private NavMeshAgent agent;
+    [SerializeField]private NavMeshAgent agent;
     [SerializeField] private Transform desti;
 
 
@@ -20,6 +20,8 @@ public class CustomerNavMesh : MonoBehaviour
         if (agent.remainingDistance <= agent.stoppingDistance)
             Destroy(gameObject);
 
+        if (agent.velocity != Vector3.zero)
+            transform.rotation = Quaternion.LookRotation(agent.velocity);
     }
 
     public void setDestination(Transform destination)

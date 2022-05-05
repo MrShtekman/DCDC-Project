@@ -39,14 +39,14 @@ public class AgentController : MonoBehaviour
         int entryIndex = random.Next(0, spawnPoints.Count);
         int exitIndex = random.Next(0, spawnPoints.Count);
 
-        if (entryIndex == exitIndex && entryIndex == 4)
+        if (entryIndex == exitIndex && entryIndex == spawnPoints.Count - 1)
             entryIndex = 0;
         else if (entryIndex == exitIndex)
             entryIndex++;
 
         entry = spawnPoints[entryIndex];
         exit = spawnPoints[exitIndex];
-        Debug.Log(entryIndex + "  " + exitIndex);
+        //Debug.Log(entryIndex + "  " + exitIndex);
         
     }
 }
