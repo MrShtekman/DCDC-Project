@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Test2" motionHint="dynamic" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="Test2s_assembly" assemblyId="1b4be27e5e6e4c6fb07cff75bf23760e">
+<Part name="Test2" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="-0.0608873 -0.0285886 0.3407" rotation="AD: 0.999229 0.0961882 -0.458433 201.514" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

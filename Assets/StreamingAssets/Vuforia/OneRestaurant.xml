@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="OneRestaurant" motionHint="dynamic" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="OneRestaurants_assembly" assemblyId="c0943eee48f24872a27cb182ee594e1a">
+<Part name="OneRestaurant" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="-0.00295139 0.00156841 0.216716" rotation="AD: 1 0.00355509 -0.0131405 210.275" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

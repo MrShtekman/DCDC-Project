@@ -12,7 +12,7 @@ public class FoodCourtArea_Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       InvokeRepeating("SpawnFoodCourt", 1f,interval);
+      // InvokeRepeating("SpawnFoodCourt", 1f,interval);
     }
 
     private bool IsModelTracked() {

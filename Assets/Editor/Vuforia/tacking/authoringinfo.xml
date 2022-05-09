@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARInfo>
 <TargetSet version="27.0" toolVersion="10.6.3">
-<ModelTarget name="tacking" targetId="a1cc94217d9c41e29a04d8de2721239a" version="14.0" toolVersion="10.6.3" bbox="-1.105055 -0.309864 -0.348470 1.897876 0.213340 0.454657" previewImage="a1cc94217d9c41e29a04d8de2721239a_preview.jpg"/>
+<ModelTarget name="tacking" targetId="ec0a4ddd83e5494c83d48a0237f1212f" version="14.0" toolVersion="10.6.3" bbox="-0.110506 -0.045446 -0.030986 0.189788 0.034867 0.021334" previewImage="ec0a4ddd83e5494c83d48a0237f1212f_preview.jpg"/>
 
 </TargetSet>
 
-<Assembly name="tackings_assembly" assemblyId="fca95b78ef684729a77eddc3488e96b6">
+<Assembly name="tackings_assembly" assemblyId="9843d9d4f5174aa8afaff8fd41340385">
 <Part name="tacking" translation="0 0 0" rotation="AD: 0 0 1 0"/>
-<EntryPoint name="viewpoint_0000" translation="0.39667 -0.0391077 17.6209" rotation="AD: 0.999999 0.0109823 -0.131414 189.473" image="" trained="no">
+<EntryPoint name="viewpoint_0000" translation="-0.0369284 -0.00221116 1.75199" rotation="AD: 0.201061 1.52998 -1.29398 170.347" image="" trained="no">
 
 </EntryPoint>
 

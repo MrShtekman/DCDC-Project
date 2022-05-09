@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.6.3">
+<ModelTarget name="OneRestaurant" targetId="34a6d93ec6614e81b44d5299e1376191" version="14.0" toolVersion="10.6.3" bbox="-0.082923 -0.040068 -0.029233 0.077185 0.040088 0.022892" previewImage="34a6d93ec6614e81b44d5299e1376191_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="OneRestaurants_assembly" assemblyId="c0943eee48f24872a27cb182ee594e1a">
+<Part name="OneRestaurant" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="-0.00295139 0.00156841 0.216716" rotation="AD: 1 0.00355509 -0.0131405 210.275" image="" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
