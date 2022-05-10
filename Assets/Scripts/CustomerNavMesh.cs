@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class CustomerNavMesh : MonoBehaviour
 {
     [SerializeField]private NavMeshAgent agent;
-    [SerializeField] private Transform desti;
+    //[SerializeField] private Transform desti;
 
 
     private void Awake()
@@ -24,10 +24,10 @@ public class CustomerNavMesh : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(agent.velocity);
     }
 
-    public void setDestination(Transform destination)
+    public void setDestination(Vector3 destination)
     {
-        desti = destination;
-        agent.SetDestination(destination.position);
+        //desti = destination;
+        agent.SetDestination(destination);
         
     }
 
