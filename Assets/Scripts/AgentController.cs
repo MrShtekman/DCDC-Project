@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class AgentController : MonoBehaviour
@@ -9,8 +10,10 @@ public class AgentController : MonoBehaviour
     [SerializeField] private List<Transform> spawnPoints;
     //[SerializeField] private List<GameObject> customers;
     [SerializeField] private GameObject customer;
-    [SerializeField] private float spawnInterval;
-    
+    [SerializeField] private Slider passerSlider;
+    [SerializeField] private Text passerCount;
+
+    private float spawnSpeed;
     private float spawnTimer = 0;
     private Transform entry, exit;
     void Start()
@@ -21,7 +24,9 @@ public class AgentController : MonoBehaviour
     
     void Update()
     {
-     
+
+        spawnSpeed = passerSlider.value;
+        passerCount.text = spawnSpeed.ToString();
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
         {
@@ -46,7 +51,7 @@ public class AgentController : MonoBehaviour
 
             GameObject visitor = Instantiate(customer, entryPoint, Quaternion.identity);
             visitor.GetComponent<CustomerNavMesh>().setDestination(exitPoint);
-            spawnTimer = spawnInterval;
+            spawnTimer = 60/spawnSpeed;
         }
     }
 

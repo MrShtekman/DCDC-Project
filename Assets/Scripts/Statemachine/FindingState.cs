@@ -7,19 +7,22 @@ public class FindingState : State
 {
     public WaitingState waitingState;
     private NavMeshAgent agent;
-    [SerializeField] private Transform destination;
-
-
+    //[SerializeField] private Transform destination;
+    [SerializeField] private Restaurant restaurant;
+    [SerializeField] private List<Transform> waitingPoints;
+    [SerializeField] private WaitingPoint waitingPoint;
     public override void EnterState()
     {
-        Debug.Log("Finding!");
+
         agent = transform.parent.parent.GetComponent<NavMeshAgent>();
-        agent.SetDestination(destination.position);
+        //agent.SetDestination(destination.position);
+        List<Transform> waitingPoints = restaurant.waitingPoints;
+        WaitingInLine();
     }
 
     public override void ExitState()
     {
-        Debug.Log("Found!");
+
     }
 
     public override State UpdateState()
@@ -33,6 +36,21 @@ public class FindingState : State
         }
         else
             return this;
+    }
+
+    public void WaitingInLine()
+    {
+        for(int i = 0; i < waitingPoints.Count; i++)
+        {
+            WaitingPoint nextWaitingPoint = waitingPoints[i].GetComponent<WaitingPoint>();
+            if (!nextWaitingPoint.taken)
+            {
+                nextWaitingPoint.taken = true;
+                agent.SetDestination(waitingPoints[i].transform.position);
+                waitingPoint.taken = false;
+                waitingPoint = nextWaitingPoint;
+            }
+        }
     }
 
    
