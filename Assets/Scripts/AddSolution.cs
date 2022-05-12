@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.AI.Navigation;
 
 public class AddSolution : MonoBehaviour
     {
@@ -8,6 +9,7 @@ public class AddSolution : MonoBehaviour
     public GameObject foodCourt;
     [SerializeField] private bool swapped;
     [SerializeField] private float swapInterval;
+    [SerializeField] private NavMeshSurface surface;
     private float timer;
     private void Start()
         {
@@ -26,6 +28,7 @@ public class AddSolution : MonoBehaviour
             {
             swapped = !swapped;
             toggleFoodCourt();
+            surface.BuildNavMesh();
             timer = swapInterval;
             }
         
