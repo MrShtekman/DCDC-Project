@@ -172,7 +172,6 @@ GameObject:
   - component: {fileID: 5860332926058663225}
   - component: {fileID: 8552585242212334067}
   - component: {fileID: 3429600979360237991}
-  - component: {fileID: 3516585485884971626}
   m_Layer: 0
   m_Name: OriginalFloor
   m_TagString: Untagged
@@ -266,22 +265,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 16.199999, y: 0.9257747, z: 13.400001}
   m_Center: {x: -5.4999995, y: 0.46288735, z: -4.3}
---- !u!114 &3516585485884971626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7903850910936193062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49475e6031e2364c8bcf75f71c17b3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cube: {fileID: 0}
-  foodCourt: {fileID: 0}
-  swapped: 0
-  swapInterval: 0
 --- !u!1 &8029853816092719867
 GameObject:
   m_ObjectHideFlags: 0
