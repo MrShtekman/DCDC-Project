@@ -11,22 +11,21 @@ public class AgentController : MonoBehaviour
     //[SerializeField] private List<GameObject> customers;
     [SerializeField] private GameObject customer;
     [SerializeField] private Slider passerSlider;
-    [SerializeField] private Text passerCount;
+    [SerializeField] private Text customerIndicatorText;
 
     private float spawnSpeed;
     private float spawnTimer = 0;
     private Transform entry, exit;
     void Start()
     {
-        
+        passerSlider.onValueChanged.AddListener(CustomerSliderChange);
+        passerSlider.value = 2;
     }
 
-    
+
     void Update()
     {
 
-        spawnSpeed = passerSlider.value;
-        passerCount.text = spawnSpeed.ToString();
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
         {
@@ -70,6 +69,34 @@ public class AgentController : MonoBehaviour
         exit = spawnPoints[exitIndex];
         //Debug.Log(entryIndex + "  " + exitIndex);
         
+    }
+
+    private void CustomerSliderChange(float arg0)
+    {
+        switch (passerSlider.value)
+        {
+            case 0:
+                spawnSpeed = 30;
+                customerIndicatorText.text = "Empty";
+                break;
+            case 1:
+                spawnSpeed = 80;
+                customerIndicatorText.text = "Handful";
+                break;
+            case 2:
+                spawnSpeed = 140;
+                customerIndicatorText.text = "Crowded";
+                break;
+            case 3:
+                spawnSpeed = 200;
+                customerIndicatorText.text = "Full";
+                break;
+        }
+    }
+
+    private void ShowCustomerNumber()
+    {
+        //int i = GameObject.FindGameObjectsWithTag("Customer")
     }
 
     
