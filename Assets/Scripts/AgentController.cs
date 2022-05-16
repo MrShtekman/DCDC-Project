@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -11,9 +12,13 @@ public class AgentController : MonoBehaviour
     [SerializeField] private GameObject customer;
     [SerializeField] private Slider passerSlider;
     [SerializeField] private Text customerIndicatorText, customerNumber;
+    [SerializeField] private bool allowSpawning;
 
-    private float spawnSpeed;
-    private float spawnTimer = 0;
+    [SerializeField] private NavMeshSurface surface;
+    [SerializeField] private ShowNavmesh showNav;
+
+    private float spawnSpeed, spawnTimer;
+
     private Transform entry, exit;
     void Start()
     {
@@ -27,7 +32,7 @@ public class AgentController : MonoBehaviour
         customerNumber.text = GameObject.FindGameObjectsWithTag("Customer").Length.ToString();
 
         spawnTimer -= Time.deltaTime;
-        if (spawnTimer <= 0)
+        if (spawnTimer <= 0 && allowSpawning)
         {
             SelectPath(out entry, out exit);
             Debug.Log(entry.lossyScale.z);
@@ -92,11 +97,22 @@ public class AgentController : MonoBehaviour
             case 3:
                 spawnSpeed = 200;
                 customerIndicatorText.text = "Full";
+               /* GameObject[] customers;
+                customers = GameObject.FindGameObjectsWithTag("Customer");
+                foreach (GameObject customer in customers)
+                {
+                    Destroy(customer.gameObject);
+                }
+                surface.BuildNavMesh();
+                showNav.ShowMesh();*/
                 break;
         }
     }
 
-
+    public void StartSpawning()
+    {
+        allowSpawning = true;
+    }
 
     
 }

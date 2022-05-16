@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class CustomerNavMesh : MonoBehaviour
 {
-    [SerializeField]private NavMeshAgent agent;
+    private NavMeshAgent agent;
     //[SerializeField] private Transform desti;
 
 

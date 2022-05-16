@@ -10,10 +10,13 @@ public class AddSolution : MonoBehaviour
     [SerializeField] private bool swapped;
     [SerializeField] private float swapInterval;
     [SerializeField] private NavMeshSurface surface;
+    [SerializeField] private ShowNavmesh showNav;
+
+    private GameObject[] customers;
     private float timer;
     private void Start()
         {
-        toggleFoodCourt();
+        //toggleFoodCourt();
         }
 
     private void Update()
@@ -34,15 +37,16 @@ public class AddSolution : MonoBehaviour
         }
     private void toggleFoodCourt()
         {
-        GameObject[] customers;
+        
         customers = GameObject.FindGameObjectsWithTag("Customer");
         foreach(GameObject customer in customers)
             {
-            Destroy(customer);
+            Destroy(customer.gameObject);
             }
         
         fence.SetActive(swapped);
         surface.BuildNavMesh();
+        //showNav.ShowMesh();
         }
 
     }

@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 6656248186654045723}
   - component: {fileID: 6941630915945997875}
   - component: {fileID: 817712339242196116}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6508973248213172706
 Transform:
@@ -109,13 +109,12 @@ GameObject:
   - component: {fileID: 3223363613242180770}
   - component: {fileID: 3223363613242180769}
   - component: {fileID: 3223363613242180774}
-  - component: {fileID: 2964332534105529919}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Customer
   m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3223363613242180773
 Transform:
@@ -208,7 +207,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.5
+  m_Speed: 0.1
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 0.2
@@ -232,23 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac2bc244c30af649928de0f9842a538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
---- !u!208 &2964332534105529919
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3223363613242180768}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 0.5, y: 1, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0
 --- !u!1 &4119526600681944478
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,12 +243,12 @@ GameObject:
   - component: {fileID: 122424607449981605}
   - component: {fileID: 1176113219080338153}
   - component: {fileID: 6398529905863717690}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pupil (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2923896872865606882
 Transform:
@@ -356,12 +338,12 @@ GameObject:
   - component: {fileID: 8190689873956419713}
   - component: {fileID: 7129048136528330751}
   - component: {fileID: 7783839791541462973}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7041990751848213267
 Transform:
@@ -451,12 +433,12 @@ GameObject:
   - component: {fileID: 1644647667244546977}
   - component: {fileID: 6109610651108768345}
   - component: {fileID: 6784346979020962807}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eye (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4930413882624302979
 Transform:

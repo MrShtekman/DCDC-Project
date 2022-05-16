@@ -21,7 +21,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1950665598303327965
 Transform:
@@ -1501,10 +1501,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49475e6031e2364c8bcf75f71c17b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube: {fileID: 0}
-  foodCourt: {fileID: 0}
+  fence: {fileID: 0}
   swapped: 0
   swapInterval: 0
+  surface: {fileID: 0}
+  showNav: {fileID: 0}
 --- !u!54 &-2719924161081477133
 Rigidbody:
   m_ObjectHideFlags: 0
