@@ -8,23 +8,23 @@ using Random = UnityEngine.Random;
 public class AgentController : MonoBehaviour
 {
     [SerializeField] private List<Transform> spawnPoints;
-    //[SerializeField] private List<GameObject> customers;
     [SerializeField] private GameObject customer;
     [SerializeField] private Slider passerSlider;
-    [SerializeField] private Text customerIndicatorText;
+    [SerializeField] private Text customerIndicatorText, customerNumber;
 
     private float spawnSpeed;
     private float spawnTimer = 0;
     private Transform entry, exit;
     void Start()
     {
-        passerSlider.onValueChanged.AddListener(CustomerSliderChange);
-        passerSlider.value = 2;
+        passerSlider.onValueChanged.AddListener(delegate { CustomerSliderChange(); });
+        CustomerSliderChange();
     }
 
 
     void Update()
     {
+        customerNumber.text = GameObject.FindGameObjectsWithTag("Customer").Length.ToString();
 
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
@@ -52,6 +52,8 @@ public class AgentController : MonoBehaviour
             visitor.GetComponent<CustomerNavMesh>().setDestination(exitPoint);
             spawnTimer = 60/spawnSpeed;
         }
+
+
     }
 
     private void SelectPath(out Transform entry, out Transform exit)
@@ -71,7 +73,7 @@ public class AgentController : MonoBehaviour
         
     }
 
-    private void CustomerSliderChange(float arg0)
+    private void CustomerSliderChange()
     {
         switch (passerSlider.value)
         {
@@ -94,10 +96,7 @@ public class AgentController : MonoBehaviour
         }
     }
 
-    private void ShowCustomerNumber()
-    {
-        //int i = GameObject.FindGameObjectsWithTag("Customer")
-    }
+
 
     
 }
