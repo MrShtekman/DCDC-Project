@@ -34,6 +34,13 @@ public class AddSolution : MonoBehaviour
         }
     private void toggleFoodCourt()
         {
+        GameObject[] customers;
+        customers = GameObject.FindGameObjectsWithTag("Customer");
+        foreach(GameObject customer in customers)
+            {
+            Destroy(customer);
+            }
+        
         fence.SetActive(swapped);
         surface.BuildNavMesh();
         }
