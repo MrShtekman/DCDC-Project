@@ -12,7 +12,7 @@ public class CustomerNavMesh : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        
+        agent.speed = Random.Range(0.1f, 0.17f);
     }
 
     private void Update()

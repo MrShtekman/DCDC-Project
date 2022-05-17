@@ -9,19 +9,28 @@ using Random = UnityEngine.Random;
 public class AgentController : MonoBehaviour
 {
     [SerializeField] private List<Transform> spawnPoints;
-    [SerializeField] private GameObject customer;
+    
+    [SerializeField] private GameObject customer, ogDiners, ogDinersC, ogDinersM, ogDinersE, changedDiners, changedDinersC, changedDinersM, changedDinersE;
+    [SerializeField] private GameObject[] test;
+    
+    [Space(20)]
     [SerializeField] private Slider passerSlider;
     [SerializeField] private Text customerIndicatorText, customerNumber;
     [SerializeField] private bool allowSpawning;
 
+    [Header("Play testing variables")]
     [SerializeField] private NavMeshSurface surface;
     [SerializeField] private ShowNavmesh showNav;
+    public GameObject fence;
+    [SerializeField] private bool swapped;
 
+    
     private float spawnSpeed, spawnTimer;
-
     private Transform entry, exit;
     void Start()
     {
+       
+        
         passerSlider.onValueChanged.AddListener(delegate { CustomerSliderChange(); });
         CustomerSliderChange();
     }
@@ -97,16 +106,27 @@ public class AgentController : MonoBehaviour
             case 3:
                 spawnSpeed = 200;
                 customerIndicatorText.text = "Full";
-               /* GameObject[] customers;
-                customers = GameObject.FindGameObjectsWithTag("Customer");
-                foreach (GameObject customer in customers)
-                {
-                    Destroy(customer.gameObject);
-                }
-                surface.BuildNavMesh();
-                showNav.ShowMesh();*/
+                TestFunctions();
+                
                 break;
         }
+    }
+
+    private void TestFunctions()
+    {
+        GameObject[] customers;
+        customers = GameObject.FindGameObjectsWithTag("Customer");
+        
+        foreach (GameObject customer in customers)
+        {
+            Destroy(customer.gameObject);
+        }
+        swapped = !swapped;
+        ogDiners.SetActive(!swapped);
+        changedDiners.SetActive(swapped);
+        fence.SetActive(swapped);
+        surface.BuildNavMesh();
+        //showNav.ShowMesh();
     }
 
     public void StartSpawning()
