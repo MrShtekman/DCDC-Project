@@ -11,6 +11,7 @@ public class AddSolution : MonoBehaviour
     [SerializeField] private float swapInterval;
     [SerializeField] private NavMeshSurface surface;
     [SerializeField] private ShowNavmesh showNav;
+    [SerializeField] private GameObject ogDiners, changedDiners;
 
     private GameObject[] customers;
     private float timer;
@@ -36,19 +37,21 @@ public class AddSolution : MonoBehaviour
         
         }
     private void toggleFoodCourt()
-        {
-        
+    {
+
         customers = GameObject.FindGameObjectsWithTag("Customer");
-        foreach(GameObject customer in customers)
-            {
+
+        foreach (GameObject customer in customers)
+        {
             Destroy(customer.gameObject);
-            }
-        
+        }
+        swapped = !swapped;
+        ogDiners.SetActive(!swapped);
+        changedDiners.SetActive(swapped);
         fence.SetActive(swapped);
         surface.BuildNavMesh();
         //showNav.ShowMesh();
-        }
-
     }
+}
 
 

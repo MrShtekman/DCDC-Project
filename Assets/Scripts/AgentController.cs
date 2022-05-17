@@ -10,8 +10,8 @@ public class AgentController : MonoBehaviour
 {
     [SerializeField] private List<Transform> spawnPoints;
     
-    [SerializeField] private GameObject customer, ogDiners, ogDinersC, ogDinersM, ogDinersE, changedDiners, changedDinersC, changedDinersM, changedDinersE;
-    [SerializeField] private GameObject[] test;
+    [SerializeField] private GameObject customer, ogDiners, changedDiners;
+    [SerializeField] private GameObject[] diners;
     
     [Space(20)]
     [SerializeField] private Slider passerSlider;
@@ -89,27 +89,45 @@ public class AgentController : MonoBehaviour
 
     private void CustomerSliderChange()
     {
+        //0 = empty, 1 = medium, 2 = crowded.
         switch (passerSlider.value)
         {
             case 0:
                 spawnSpeed = 30;
                 customerIndicatorText.text = "Empty";
+                ActivateThis(0);
                 break;
             case 1:
                 spawnSpeed = 80;
                 customerIndicatorText.text = "Handful";
+                ActivateThis(1);
                 break;
             case 2:
                 spawnSpeed = 140;
                 customerIndicatorText.text = "Crowded";
+                ActivateThis(1);
                 break;
             case 3:
                 spawnSpeed = 200;
                 customerIndicatorText.text = "Full";
-                TestFunctions();
-                
+                //TestFunctions();
+                ActivateThis(2);
+
                 break;
         }
+    }
+
+    private void ActivateThis(int i)
+    {
+        foreach(GameObject dinerGroup in diners)
+        {
+            dinerGroup.SetActive(false);
+        }
+
+        if (swapped)
+            i += 3;
+
+        diners[i].SetActive(true);
     }
 
     private void TestFunctions()
@@ -128,6 +146,8 @@ public class AgentController : MonoBehaviour
         surface.BuildNavMesh();
         //showNav.ShowMesh();
     }
+
+
 
     public void StartSpawning()
     {
