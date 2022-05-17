@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class CustomerNavMesh : MonoBehaviour
 {
     private NavMeshAgent agent;
+    [SerializeField] private GameObject emote;
     //[SerializeField] private Transform desti;
 
 
@@ -31,5 +32,26 @@ public class CustomerNavMesh : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Diner"))
+        {
+            emote.SetActive(true);
+            Debug.Log("anegy");
+        }
+            
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Diner"))
+            StartCoroutine(hideEmote(3));
+    }
+    
+    IEnumerator hideEmote(int sec)
+    {
+        yield return new WaitForSeconds(sec);
+        emote.SetActive(false);
+    }
 }
 

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 28591770}
   m_Layer: 0
   m_Name: Crowded
-  m_TagString: Crowded
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1163,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -1679,7 +1679,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42298
+  m_Name: pb_Mesh44624
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2353,7 +2353,7 @@ GameObject:
   - component: {fileID: 225181677}
   m_Layer: 0
   m_Name: Medium
-  m_TagString: Medium
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2402,7 +2402,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -2603,35 +2603,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!21 &361359012
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'FoodCourtMaterial
-
-    162090'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3f833eeba83344e8865e6a71d4f007b7, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &380949217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2659,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -2810,7 +2781,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2083248301}
+  - {fileID: 1907826061}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2950,7 +2921,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -3030,7 +3001,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42056
+  m_Name: pb_Mesh43474
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4203,7 +4174,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42594
+  m_Name: pb_Mesh45858
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4381,7 +4352,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -4466,7 +4437,7 @@ GameObject:
   - component: {fileID: 606719533}
   m_Layer: 0
   m_Name: Empty
-  m_TagString: Empty
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4513,7 +4484,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -4607,12 +4578,12 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -4760,7 +4731,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -5187,7 +5158,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42112
+  m_Name: pb_Mesh43626
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6197,7 +6168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976927202
 GameObject:
@@ -6250,7 +6221,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -6421,7 +6392,7 @@ MonoBehaviour:
   passerSlider: {fileID: 315522381}
   customerIndicatorText: {fileID: 1304190045}
   customerNumber: {fileID: 1203740036}
-  allowSpawning: 0
+  allowSpawning: 1
   surface: {fileID: 1165033567}
   showNav: {fileID: 1306230847}
   fence: {fileID: 976927202}
@@ -6622,8 +6593,8 @@ Transform:
   - {fileID: 991027105}
   - {fileID: 976927203}
   - {fileID: 2095195134}
-  m_Father: {fileID: 1120773790}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034143951
 GameObject:
@@ -6829,7 +6800,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 361359012}
+  - {fileID: 2101354603}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6950,10 +6921,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1027411606}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1126419676
 PrefabInstance:
@@ -6975,7 +6945,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -7060,7 +7030,7 @@ GameObject:
   - component: {fileID: 1153980917}
   m_Layer: 0
   m_Name: Crowded
-  m_TagString: Crowded
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7428,7 +7398,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -7596,7 +7566,7 @@ RectTransform:
   - {fileID: 53215702}
   - {fileID: 260840606}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7620,7 +7590,7 @@ GameObject:
   - component: {fileID: 1274980960}
   m_Layer: 0
   m_Name: Empty
-  m_TagString: Empty
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7905,7 +7875,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1325791475 stripped
 Transform:
@@ -7924,7 +7894,7 @@ GameObject:
   - component: {fileID: 1357039073}
   m_Layer: 0
   m_Name: Medium
-  m_TagString: Medium
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8492,7 +8462,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -8586,7 +8556,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -8885,7 +8855,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42176
+  m_Name: pb_Mesh44168
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9063,7 +9033,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -9157,7 +9127,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -9257,7 +9227,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -9547,7 +9517,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -9703,7 +9673,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RestaurantWithoutFloor
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2720671529787246022, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 8282206617732475541, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 480942798270216915, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 6453862783956260683, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 8765491849095142948, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 940776031133516679, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 7493507374062282583, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 8721097451871711961, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 3593808306821290737, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 7465805020389806363, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 5084482135137792437, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 602969875990035608, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 1301394328261706950, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
+    - {fileID: 6732003909182240712, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 57ceac6a2fdb72e47be5cc96e9dbdad9, type: 3}
 --- !u!4 &1735687790 stripped
 Transform:
@@ -9731,7 +9715,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -9811,7 +9795,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42224
+  m_Name: pb_Mesh44260
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10171,7 +10155,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -10392,7 +10376,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -10472,6 +10456,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1751838620}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1907826061
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'OnneaMaterial
+
+    44008'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1f0853b4f71f6c34c95e34a7df1a2e0f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &1911686041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
@@ -10763,7 +10776,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -10937,7 +10950,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh162004
+  m_Name: pb_Mesh44754
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11141,7 +11154,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -11241,7 +11254,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -11321,7 +11334,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42316
+  m_Name: pb_Mesh44692
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11485,7 +11498,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42342
+  m_Name: pb_Mesh44842
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11643,35 +11656,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!21 &2083248301
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'OnneaMaterial
-
-    161884'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1f0853b4f71f6c34c95e34a7df1a2e0f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &2095195133
 GameObject:
   m_ObjectHideFlags: 0
@@ -11737,6 +11721,35 @@ Transform:
   m_Father: {fileID: 2095195134}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &2101354603
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'FoodCourtMaterial
+
+    45272'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3f833eeba83344e8865e6a71d4f007b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &2133781485
 GameObject:
   m_ObjectHideFlags: 0
@@ -11933,7 +11946,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -12063,12 +12076,12 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
@@ -12163,7 +12176,7 @@ PrefabInstance:
     - target: {fileID: 2646867799761309346, guid: f3177b66266acf6429c34162a057f077,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Diner
       objectReference: {fileID: 0}
     - target: {fileID: 2646867799761309350, guid: f3177b66266acf6429c34162a057f077,
         type: 3}

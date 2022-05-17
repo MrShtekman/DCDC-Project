@@ -44,7 +44,6 @@ public class AgentController : MonoBehaviour
         if (spawnTimer <= 0 && allowSpawning)
         {
             SelectPath(out entry, out exit);
-            Debug.Log(entry.lossyScale.z);
 
             float spawnRange = entry.lossyScale.z / 2;
             float entrySpawnZ = Random.Range(-spawnRange, spawnRange);

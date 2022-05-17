@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Customer
   - Crowded
-  - Medium
-  - Empty
+  - Diner
   layers:
   - Default
   - TransparentFX
