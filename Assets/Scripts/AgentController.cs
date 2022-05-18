@@ -15,7 +15,7 @@ public class AgentController : MonoBehaviour
     
     [Space(20)]
     [SerializeField] private Slider passerSlider;
-    [SerializeField] private Text customerIndicatorText, customerNumber;
+    [SerializeField] private Text customerIndicatorText, customerNumber, breakfastText, lunchText, dinnerText;
     [SerializeField] private bool allowSpawning;
 
     [Header("Play testing variables")]
@@ -94,17 +94,23 @@ public class AgentController : MonoBehaviour
         {
             case 0:
                 spawnSpeed = 60;
-                customerIndicatorText.text = "Breakfast Time";
+                breakfastText.gameObject.SetActive(true);
+                lunchText.gameObject.SetActive(false);
+                dinnerText.gameObject.SetActive(false);
                 ActivateThis(0);
                 break;
             case 1:
                 spawnSpeed = 200;
-                customerIndicatorText.text = "Lunch Time";
+                breakfastText.gameObject.SetActive(false);
+                lunchText.gameObject.SetActive(true);
+                dinnerText.gameObject.SetActive(false);
                 ActivateThis(2);
                 break;
             case 2:
                 spawnSpeed = 140;
-                customerIndicatorText.text = "Dinner Time";
+                breakfastText.gameObject.SetActive(false);
+                lunchText.gameObject.SetActive(false);
+                dinnerText.gameObject.SetActive(true);
                 ActivateThis(1);
                 break;
 

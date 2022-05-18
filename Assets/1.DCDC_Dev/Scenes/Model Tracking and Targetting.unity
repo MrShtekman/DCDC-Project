@@ -6492,9 +6492,24 @@ PrefabInstance:
       objectReference: {fileID: 1306230847}
     - target: {fileID: 6408928119684630731, guid: 6b3f1ed7e14017443b3799943626e09c,
         type: 3}
+      propertyPath: lunchText
+      value: 
+      objectReference: {fileID: 333921574}
+    - target: {fileID: 6408928119684630731, guid: 6b3f1ed7e14017443b3799943626e09c,
+        type: 3}
+      propertyPath: dinnerText
+      value: 
+      objectReference: {fileID: 64503908}
+    - target: {fileID: 6408928119684630731, guid: 6b3f1ed7e14017443b3799943626e09c,
+        type: 3}
       propertyPath: passerSlider
       value: 
       objectReference: {fileID: 1110813911}
+    - target: {fileID: 6408928119684630731, guid: 6b3f1ed7e14017443b3799943626e09c,
+        type: 3}
+      propertyPath: breakfastText
+      value: 
+      objectReference: {fileID: 360267523}
     - target: {fileID: 6408928119684630731, guid: 6b3f1ed7e14017443b3799943626e09c,
         type: 3}
       propertyPath: customerNumber
