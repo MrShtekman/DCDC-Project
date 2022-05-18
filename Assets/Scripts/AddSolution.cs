@@ -7,7 +7,7 @@ public class AddSolution : MonoBehaviour
     {
     public GameObject fence;
     //public GameObject foodCourt;
-    public static bool swapped;
+    public bool swapped;
     [SerializeField] private float swapInterval;
     [SerializeField] private NavMeshSurface surface;
     [SerializeField] private ShowNavmesh showNav;
@@ -51,6 +51,7 @@ public class AddSolution : MonoBehaviour
         surface.BuildNavMesh();
         //showNav.ShowMesh();
         ac.CustomerSliderChange();
+        ac.ToggleSolution();
     }
 }
 

@@ -24,7 +24,7 @@ public class AgentController : MonoBehaviour
     public GameObject fence;
     //[SerializeField] private bool swapped;
 
-    [SerializeField] private AddSolution asol;
+    [SerializeField] private AddSolution addSol;
 
     private float spawnSpeed, spawnTimer;
     private Transform entry, exit;
@@ -124,29 +124,12 @@ public class AgentController : MonoBehaviour
             dinerGroup.SetActive(false);
         }
 
-        if (AddSolution.swapped)
+        if (addSol.swapped)
             i += 3;
 
         diners[i].SetActive(true);
     }
 
-   /* private void TestFunctions()
-    {
-        GameObject[] customers;
-        customers = GameObject.FindGameObjectsWithTag("Customer");
-        
-        foreach (GameObject customer in customers)
-        {
-            Destroy(customer.gameObject);
-            
-        }
-        swapped = !swapped;
-        ogDiners.SetActive(!swapped);
-        changedDiners.SetActive(swapped);
-        fence.SetActive(swapped);
-        surface.BuildNavMesh();
-        showNav.ShowMesh();
-    }*/
 
 
 
@@ -155,5 +138,9 @@ public class AgentController : MonoBehaviour
         allowSpawning = true;
     }
 
-    
+    public void ToggleSolution()
+    {
+        addSol.gameObject.SetActive(!addSol.swapped);
+    }
+
 }
