@@ -93,27 +93,21 @@ public class AgentController : MonoBehaviour
         switch (passerSlider.value)
         {
             case 0:
-                spawnSpeed = 30;
-                customerIndicatorText.text = "Empty";
+                spawnSpeed = 60;
+                customerIndicatorText.text = "Breakfast Time";
                 ActivateThis(0);
                 break;
             case 1:
-                spawnSpeed = 80;
-                customerIndicatorText.text = "Handful";
-                ActivateThis(1);
+                spawnSpeed = 200;
+                customerIndicatorText.text = "Lunch Time";
+                ActivateThis(2);
                 break;
             case 2:
                 spawnSpeed = 140;
-                customerIndicatorText.text = "Crowded";
+                customerIndicatorText.text = "Dinner Time";
                 ActivateThis(1);
                 break;
-            case 3:
-                spawnSpeed = 200;
-                customerIndicatorText.text = "Full";
-                //TestFunctions();
-                //asol.toggleFoodCourt();
-                ActivateThis(2);
-                break;
+
         }
     }
 
