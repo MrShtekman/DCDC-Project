@@ -37,7 +37,6 @@ public class CustomerNavMesh : MonoBehaviour
         if (other.CompareTag("Diner"))
         {
             emote.SetActive(true);
-            Debug.Log("anegy");
         }
             
     }

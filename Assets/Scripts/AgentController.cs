@@ -22,9 +22,10 @@ public class AgentController : MonoBehaviour
     [SerializeField] private NavMeshSurface surface;
     [SerializeField] private ShowNavmesh showNav;
     public GameObject fence;
-    [SerializeField] private bool swapped;
+    //[SerializeField] private bool swapped;
 
-    
+    [SerializeField] private AddSolution asol;
+
     private float spawnSpeed, spawnTimer;
     private Transform entry, exit;
     void Start()
@@ -86,7 +87,7 @@ public class AgentController : MonoBehaviour
         
     }
 
-    private void CustomerSliderChange()
+    public void CustomerSliderChange()
     {
         //0 = empty, 1 = medium, 2 = crowded.
         switch (passerSlider.value)
@@ -110,26 +111,26 @@ public class AgentController : MonoBehaviour
                 spawnSpeed = 200;
                 customerIndicatorText.text = "Full";
                 //TestFunctions();
+                //asol.toggleFoodCourt();
                 ActivateThis(2);
-
                 break;
         }
     }
 
-    private void ActivateThis(int i)
+    public void ActivateThis(int i)
     {
         foreach(GameObject dinerGroup in diners)
         {
             dinerGroup.SetActive(false);
         }
 
-        if (swapped)
+        if (AddSolution.swapped)
             i += 3;
 
         diners[i].SetActive(true);
     }
 
-    private void TestFunctions()
+   /* private void TestFunctions()
     {
         GameObject[] customers;
         customers = GameObject.FindGameObjectsWithTag("Customer");
@@ -137,14 +138,15 @@ public class AgentController : MonoBehaviour
         foreach (GameObject customer in customers)
         {
             Destroy(customer.gameObject);
+            
         }
         swapped = !swapped;
         ogDiners.SetActive(!swapped);
         changedDiners.SetActive(swapped);
         fence.SetActive(swapped);
         surface.BuildNavMesh();
-        //showNav.ShowMesh();
-    }
+        showNav.ShowMesh();
+    }*/
 
 
 
