@@ -9,14 +9,15 @@ using Random = UnityEngine.Random;
 public class AgentController : MonoBehaviour
 {
     [SerializeField] private List<Transform> spawnPoints;
-    
     [SerializeField] private GameObject customer, ogDiners, changedDiners;
     [SerializeField] private GameObject[] diners;
     
-    [Space(20)]
+
+    [Header("UI")]
     [SerializeField] private Slider passerSlider;
     [SerializeField] private Text customerIndicatorText, customerNumber, breakfastText, lunchText, dinnerText;
     [SerializeField] private bool allowSpawning;
+    [SerializeField] private GameObject[] instructions;
 
     [Header("Play testing variables")]
     [SerializeField] private NavMeshSurface surface;
@@ -25,15 +26,13 @@ public class AgentController : MonoBehaviour
     //[SerializeField] private bool swapped;
 
     [SerializeField] private AddSolution addSol;
-
     private float spawnSpeed, spawnTimer;
     private Transform entry, exit;
     void Start()
     {
-       
-        
         passerSlider.onValueChanged.AddListener(delegate { CustomerSliderChange(); });
         CustomerSliderChange();
+        ShowUI(0);
     }
 
 
@@ -130,17 +129,30 @@ public class AgentController : MonoBehaviour
         diners[i].SetActive(true);
     }
 
+    public void ShowUI(int i)
+        {
+            foreach(GameObject ui in instructions)
+            {
+            ui.SetActive(false);
+            }
+        instructions[i].SetActive(true);
+        }
 
 
 
     public void StartSpawning()
     {
         allowSpawning = true;
+        ShowUI(2);
     }
 
     public void ToggleSolution()
     {
         addSol.gameObject.SetActive(!addSol.swapped);
+        if (addSol.swapped)
+            ShowUI(5);
+        else
+            ShowUI(2);
     }
 
 }
