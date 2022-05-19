@@ -49,7 +49,7 @@ public class AddSolution : MonoBehaviour
         changedDiners.SetActive(swapped);
         fence.SetActive(swapped);
         surface.BuildNavMesh();
-        showNav.ShowMesh();
+        //showNav.ShowMesh();
         ac.CustomerSliderChange();
         ac.ToggleSolution();
     }
